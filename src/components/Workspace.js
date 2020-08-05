@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import Split from "react-split";
 import MarkdownEditor from "./MarkdownEditor";
 import MarkdownPreviewer from "./MarkdownPreviewer";
+import placeholder from "./placeholder";
 
 function Workspace() {
-  const [markDown, setMarkDown] = useState("# Hello World");
+  const [markDown, setMarkDown] = useState(placeholder);
   const [orientation, setOrientation] = useState("horizontal");
 
   useEffect(() => {
@@ -20,8 +21,8 @@ function Workspace() {
       <Split
         className="wrapper-card"
         sizes={[50, 50]}
-        minSize={100}
-        expandToMin={false}
+        minSize={orientation === "horizontal" ? 270 : 100}
+        expandToMin={true}
         gutterAlign="center"
         direction={orientation}>
         <MarkdownEditor content={markDown} changeContent={setMarkDown} />

@@ -9,7 +9,7 @@ function MarkdownPreviewer({ content }) {
   }, [content]);
 
   return (
-    <div className="markdown-preview">
+    <div className="markdown-preview scroll">
       <div className="section-title">
         <h3>Preview</h3>
       </div>

@@ -4,9 +4,9 @@
   "description": "A react app to preview and edit Markdown",
   "private": true,
   "author": {
-    "name": "Aromal Anil",
-    "email": "contact@aromalanil.me",
-    "url": "https://aromalanil.me"
+    "name": "Pratyush Garg",
+    "email": "pratyushhg@gmail.com",
+    "url": "https://github.com/Pratyush2710"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

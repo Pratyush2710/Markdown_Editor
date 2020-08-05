@@ -8,7 +8,9 @@ function MarkdownEditor({ content, changeContent }) {
 
   return (
     <div className="markdown-edit">
-      <h3 className="section-title">Markdown</h3>
+      <div className="section-title">
+        <h3>Markdown</h3>
+      </div>
       <textarea
         value={content}
         onChange={handleEditorChange}
